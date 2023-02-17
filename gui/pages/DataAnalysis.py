@@ -22,7 +22,7 @@ class DataAnalysis(tk.Frame):
         button_home.grid(column=1,row=1)
 
         button_file_select = ttk.Button(self, text="Open File",
-                                    command=lambda: lib.files.select_file())
+                                    command=lambda: lib.files.select_file(self,pages.DataAnalysis.DataAnalysis,parent,controller))
         button_file_select.grid(column=3, row=1)
         
         # static plot
